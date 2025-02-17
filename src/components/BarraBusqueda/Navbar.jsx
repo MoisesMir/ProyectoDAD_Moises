@@ -67,7 +67,7 @@ export function Navbar() {
         MILF'S & DILF'S Store
       </div>
       <ul className="navbar-links">
-        <li><NavLink to="/componentes" className="nav-link active">Componentes</NavLink></li>
+        <li><NavLink to="/componentes" className="nav-link active">Componente1s</NavLink></li>
         <li><NavLink to="/api" className="nav-link active">API</NavLink></li>
         <li><NavLink to="/gestor" className="nav-link active">Gestor Tareas</NavLink></li>
         <li><NavLink to="/informes" className="nav-link active">Informes</NavLink></li> {/* Nueva pestaña */}
