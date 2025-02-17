@@ -1,5 +1,5 @@
 import React from 'react'
-import './SongCards.css';
+import '../ApiCanciones/SongCards.css';
 
 export const SongCards = ({secondSearch}) => {
     return (
