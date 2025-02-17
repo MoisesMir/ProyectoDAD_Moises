@@ -13,6 +13,7 @@ import React from 'react';  // Solo si es necesario
 function App() {
   return (
     <>
+    <h1>Nuevo Título de Prueba</h1>
       <Navbar />
       <Routes>  {/* Define las rutas */}
         {/* Ruta para la API */}
