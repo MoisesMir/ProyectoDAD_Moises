@@ -1,0 +1,128 @@
+/* Estilos generales de la barra de navegación */
+.navbar {
+  position: fixed; /* Fija la barra en la parte superior */
+  top: 0;          /* Alinea la barra con la parte superior */
+  left: 0;         /* Asegura que empiece desde el borde izquierdo */
+  width: 100%;     /* Ocupa todo el ancho de la pantalla */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Modo claro */
+.light-mode {
+  background-color: #ffffff; /* Fondo blanco */
+  color: rgb(0, 0, 0);       /* Texto negro */
+}
+
+/* Modo oscuro */
+.dark-mode {
+  background-color: #000000; /* Fondo negro */
+  color: #ffffff;            /* Texto blanco */
+}
+
+/* Logo de la barra de navegación */
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-style:oblique
+}
+
+/* Lista de enlaces */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 50px; /* Espacio entre enlaces */
+  margin-left: 0; /* Elimina el margen izquierdo */
+  margin-top: 10px;
+}
+
+
+/* Estilo de los enlaces */
+.navbar-links li a {
+  text-decoration: none;
+  color: inherit; /* Hereda el color según el modo */
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+/* Cambio de color al pasar el ratón */
+.navbar-links li a:hover {
+  color: #7779ff; /* Color al pasar el ratón */
+}
+
+/* Logo JPG */
+.logo-jpg {
+  width: 60px; /* Ancho del icono */
+  height: 60px; /* Alto del icono */
+  object-fit: cover; /* Asegura que la imagen se recorte o escale correctamente */
+  border-radius: 30%; /* Hace el icono circular (opcional) */
+  margin-right: 10px; /* Espacio entre el logo y el texto */
+  vertical-align: middle; /* Alinea el logo con el texto */
+}
+
+.buscador {
+  width: 60px; /* Ancho del icono */
+  height: 60px; /* Alto del icono */
+  object-fit: cover; /* Asegura que la imagen se recorte o escale correctamente */
+  border-radius: 30%; /* Hace el icono circular (opcional) */
+  margin-right: 10px; /* Espacio entre el logo y el texto */
+  vertical-align: middle; /* Alinea el logo con el texto */
+}
+
+/* Botón para cambiar de modo */
+.mode-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.mode-toggle:hover {
+  transform: scale(1.2); 
+}
+
+/* Botón de alternancia para la vista móvil */
+.navbar-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Estilo para el modo claro (predeterminado) */
+body.light-mode {
+  background-color: #969bffaa;
+  color: #000000;
+}
+
+/* Estilo para el modo oscuro */
+body.dark-mode {
+  background-color: #090c44aa;
+  color: #ffffff;
+}
+
+
+/* Ajustes para la versión móvil */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar.active .navbar-links {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+

@@ -1,0 +1,57 @@
+/* Estilos generales para la página ApiPage */
+.api-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.api-page-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px; /* Espacio para que no quede muy pegado */
+  transition: all 0.3s ease; /* Suaviza el movimiento */
+  position: relative; /* Asegura la posición */
+}
+
+.api-page-container .buscador-container {
+  margin-top: 40px; /* Aumenta el espacio */
+  text-align: center;
+}
+
+
+.api-page-container .buscador-container h1 {
+  font-size: 1.8rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* Agregamos un diseño responsivo */
+@media (max-width: 768px) {
+  .api-page-container {
+    padding: 10px;
+  }
+
+  .api-page-container h1 {
+    font-size: 2rem;
+  }
+
+  .api-page-container .buscador-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .api-page-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .api-page-container .buscador-container {
+    padding: 15px;
+  }
+}
+

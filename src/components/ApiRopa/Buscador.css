@@ -1,0 +1,70 @@
+/* Estilo del contenedor de la barra de búsqueda */
+.buscador-dropdown {
+  position: relative;
+  display: inline-block; /* Asegura que el contenido se ajuste al tamaño de la barra de búsqueda */
+  width: 100%; /* Puede ser ajustado según el diseño que tengas */
+}
+
+/* Barra de búsqueda */
+.search-box {
+  font-size: 16px;
+  border-radius: 4px;
+  display: block; /* Asegura que la barra ocupe todo el espacio disponible */
+}
+
+/* Estilo del popup de los resultados */
+.results-popup {
+  position: absolute;
+  max-width: 500px; /* Puedes ajustar el tamaño máximo del popup */
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow-y: auto;
+  max-height: 400px; /* Límite de altura con scroll */
+}
+
+/* Estilo de cada resultado */
+.result-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.result-item:hover {
+  background-color: #f0f0f0;
+}
+
+.result-item-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.result-item-info h4 {
+  font-size: 16px;
+  margin: 0;
+  color: black;
+}
+
+.result-item-info p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/* Ocultar el botón de borrar (X) en navegadores WebKit */
+.ais-SearchBox-input::-webkit-search-clear-button {
+  display: none;
+}
+
+/* Ocultar el icono de búsqueda predeterminado (🔍) */
+.ais-SearchBox-submit,
+.ais-SearchBox-reset {
+  display: none;
+}
